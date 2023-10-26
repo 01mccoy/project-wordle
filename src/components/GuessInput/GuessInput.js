@@ -21,7 +21,7 @@ function GuessInput() {
         onChange={(event) => {
           setGuess(event.target.value.toUpperCase());
         }}
-        pattern="\w{5,5}"
+        pattern="[a-zA-Z]{5,5}"
         title="5개의 글자를 영어로 입력해주세요."
         minLength={WORD_LENGTH}
         maxLength={WORD_LENGTH}
