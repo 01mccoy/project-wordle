@@ -2,12 +2,12 @@ import React from "react";
 
 import { WORD_LENGTH } from "../../constants";
 
-function GuessInput() {
+function GuessInput({ handleSubmitGuess }) {
   const [guess, setGuess] = React.useState("");
 
   function handleSubmit(event) {
     event.preventDefault();
-    console.info({ guess });
+    handleSubmitGuess(guess);
     setGuess("");
   }
 
