@@ -7,6 +7,7 @@ function GuessInput({ handleSubmitGuess }) {
 
   function handleSubmit(event) {
     event.preventDefault();
+    if (guess.length < 5) return;
     handleSubmitGuess(guess);
     setGuess("");
   }
